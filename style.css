@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    overflow: hidden;
+}
+
+.clock-container {
+    display: flex;
+    align-items: center;
+    font-size: 5rem;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.time-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.time {
+    font-size: 5rem;
+}
+
+.label {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.colon {
+    font-size: 5rem;
+    margin: 0 10px;
+    opacity: 0.8;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background-size: 200% 200%;
+    animation: gradientAnimation 10s ease infinite;
+}
